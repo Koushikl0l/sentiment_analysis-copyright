@@ -1,0 +1,4 @@
+tensorflow_hub==0.12.0
+streamlit==0.85.1
+tensorflow_text==2.5.0
+tensorflow-cpu==2.5.0
