@@ -10,7 +10,7 @@ tf.get_logger().setLevel('ERROR')
 
     
 def predict(text):
-    saved_model_path='C:/Users/USER/Desktop/NLP/sentiment_analysis/saved_model'
+    saved_model_path='./saved_model'
     reloaded_model = tf.saved_model.load(saved_model_path)
     pred=tf.sigmoid(reloaded_model(tf.constant([str(text)])))
     
