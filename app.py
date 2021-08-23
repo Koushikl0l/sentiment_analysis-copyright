@@ -25,10 +25,10 @@ def main():
     if choice=="Home":
         st.title("Sentiment Analysis --text classification ")
         st.write("**Model:Here we used BERT as a pre-trained model**")
-        text_inp = st.text_input("Enter any sentence for analyze sentiment (required)")
+        text_inp = st.text_area("Enter sentence for sentiment")
         st.sidebar.info('© 2021 Copyright: Dev-k')   
 
-        if st.button("Process"):
+        if st.button("Process") and text_inp:
             pred=model.predict(text_inp)
             res=''
             if pred[0][0]>.5:
