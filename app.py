@@ -29,7 +29,7 @@ def main():
         st.sidebar.info('© 2021 Copyright: Dev-k')   
 
         if st.button("Process") and text_inp:
-            pred=model.predict(text_inp)
+            pred=model.predict(str(text_inp))
             res=''
             if pred[0][0]>.5:
                         res='positive'
