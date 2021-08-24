@@ -5,7 +5,7 @@ import tensorflow_hub as hub
 import tensorflow_text as text
 #from official.nlp import optimization  # to create AdamW optimizer
 tf.get_logger().setLevel('ERROR')
-tf.keras.backend.set_floatx('float64')
+tf.compat.v1.reset_default_graph()
 
 
 
